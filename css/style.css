@@ -1,5 +1,18 @@
+html, body {
+  font-family: 'Droid Sans', Arial, sans-serif;
+}
+
 body {
-  background: url('images/grey.png') repeat;
+  background: url('../images/grey.png') repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Droid Sans', Arial, sans-serif;
+  font-weight: normal;
+}
+
+p {
+  font-size: 20px;
 }
 
 .main {
@@ -11,19 +24,21 @@ body {
 .mark-oleson {
   font-family: 'Droid Sans', sans-serif;
   text-align: center;
-  font-size: 100px;
-  letter-spacing: -4px;
-  line-height: 0.8;
 }
 .mark {
   font-size: 120px;
+  margin: 0;
+  line-height: 0.9;
+  letter-spacing: -4px;
 }
 .oleson {
   font-size: 90px;
+  margin: 0;
+  line-height: 0.9;
+  letter-spacing: -4px;
 }
 
 .bio {
-  margin-top: 25px;
 }
 
 .works {
