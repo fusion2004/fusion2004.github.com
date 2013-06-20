@@ -17,12 +17,48 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title {
+  position: relative;
   background: #1A5582;
   color: #fff;
   line-height: 1.4;
   margin-top: 25px;
   margin-bottom: 13px;
   padding: 2px 0 7px 0;
+
+  background: #4d8ec1; /* Old browsers */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRkOGVjMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYTU1ODIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #4d8ec1 0%, #1a5582 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4d8ec1), color-stop(100%,#1a5582)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #4d8ec1 0%,#1a5582 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #4d8ec1 0%,#1a5582 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #4d8ec1 0%,#1a5582 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #4d8ec1 0%,#1a5582 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d8ec1', endColorstr='#1a5582',GradientType=0 ); /* IE6-8 */
+}
+@media only screen and (min-width: 1030px) {
+  .section-title {
+    box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.8);
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .section-title:before, .section-title:after {
+    position: absolute;
+    top: -7px;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+  }
+  .section-title:before {
+    border-width: 7px 15px 0px 0px;
+    border-color: transparent #1A5582 #1A5582 transparent;
+    left: 0;
+  }
+  .section-title:after {
+    border-width: 7px 0px 0px 15px;
+    border-color: transparent transparent #1A5582 #1A5582;
+    right: 0;
+  }
 }
 
 p, blockquote {
@@ -39,6 +75,11 @@ p, blockquote {
   .main {
     background: #fff;
   }
+}
+
+.main > .small-12.columns, .main > .large-12.columns {
+  margin: 0;
+  padding: 0;
 }
 
 .mark-oleson {
