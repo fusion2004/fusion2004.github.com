@@ -3,12 +3,23 @@ html, body {
 }
 
 body {
-  background: url('../images/grey.png') repeat;
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    background: url('../images/subtlegrey_complement.png') repeat;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 100;
+  text-align: center;
+}
+
+.section-title {
+  background: #1A5582;
+  color: #fff;
+  line-height: 1.4;
 }
 
 p, blockquote {
@@ -16,9 +27,15 @@ p, blockquote {
 }
 
 .main {
-  padding-top: 35px;
+  padding-top: 20px;
   background: #fff;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.17);
+  background: url('../images/subtlegrey_transparent.png') repeat;
+}
+@media only screen and (min-width: 1000px) {
+  .main {
+    background: #fff;
+  }
 }
 
 .mark-oleson {
