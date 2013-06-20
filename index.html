@@ -40,6 +40,34 @@
   <script src="js/vendor/custom.modernizr.js"></script>
 </head>
 <body>
+  <div class="contain-to-grid nav-top sticky">
+  <nav class="top-bar">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1>Mark Oleson</h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="divider hide-for-small"></li>
+        <li><a href="#">Bio</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Skills</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Work</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Contact</a></li>
+        <li class="divider"></li>
+      </ul>
+    </section>
+  </nav>
+  </div>
+
   <div class="main row">
       <div class="small-12 columns header">
         <div class="large-4 columns mark-oleson">
@@ -137,6 +165,13 @@
 
       $(".mark").fitText(0.28);
       $(".oleson").fitText(0.35);
+
+      $(window).scroll(function () {
+        var final = $('.header').offset().top + $('.header').height() - 30;
+        var current = $('body').scrollTop();
+
+        $('.top-bar .name h1').css('opacity', current / final);
+      });
     });
   </script>
 </body>
