@@ -16,11 +16,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-p, blockquote {
+p, blockquote, ul {
   font-size: 18px;
 }
 @media only screen and (min-width: 768px) {
-  p, blockquote {
+  p, blockquote, ul {
     font-size: 21px;
   }
 }
