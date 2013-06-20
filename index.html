@@ -65,9 +65,16 @@
   <script src="js/foundation/foundation.topbar.js"></script>
   <script src="js/foundation/foundation.interchange.js"></script>
   <script src="js/foundation/foundation.placeholder.js"></script>
+
+  <script src="js/vendor/jquery.fittext.js"></script>
   
   <script>
-    $(document).foundation();
+    $(document).ready(function() {
+      $(document).foundation();
+
+      $(".mark").fitText(0.28);
+      $(".oleson").fitText(0.35);
+    });
   </script>
 </body>
 </html>

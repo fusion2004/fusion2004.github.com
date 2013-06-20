@@ -7,11 +7,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Droid Sans', Arial, sans-serif;
-  font-weight: normal;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 100;
 }
 
-p {
+p, blockquote {
   font-size: 20px;
 }
 
@@ -22,20 +22,19 @@ p {
 }
 
 .mark-oleson {
-  font-family: 'Droid Sans', sans-serif;
   text-align: center;
+}
+.mark, .oleson {
+  margin: 0;
+  line-height: 0.9;
+  letter-spacing: -4px;
 }
 .mark {
   font-size: 120px;
-  margin: 0;
-  line-height: 0.9;
-  letter-spacing: -4px;
 }
 .oleson {
   font-size: 90px;
-  margin: 0;
-  line-height: 0.9;
-  letter-spacing: -4px;
+  padding-left: 10px;
 }
 
 .bio {
