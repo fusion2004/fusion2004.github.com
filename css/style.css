@@ -128,3 +128,13 @@ p, blockquote {
 ul.ninja-profiles {
   list-style-position: inside;
 }
+
+.footer p {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+}
+
+.footer span.copyright {
+  font-size: 18px;
+}
