@@ -170,14 +170,29 @@
     $(document).ready(function() {
       $(document).foundation();
 
+      window.top_name_animate = true;
+
       $(".mark").fitText(0.28);
       $(".oleson").fitText(0.35);
 
       $(window).scroll(function () {
-        var final = $('.header').offset().top + $('.header').height() - 30;
-        var current = $('body').scrollTop();
+        if(window.top_name_animate) {
+          var $header = $('.header');
+          var $name = $('.top-bar .name h1');
+          var final = $header.offset().top + $header.height() - 30;
+          var current = $('body').scrollTop();
 
-        $('.top-bar .name h1').css('opacity', current / final);
+          var cur_opacity = parseFloat($name.css('opacity'));
+          var new_opacity = current / final >= 1 ? 1 : current / final;
+
+          //new_opacity = cur_opacity > new_opacity ? cur_opacity : new_opacity;
+
+          $name.css('opacity', new_opacity);
+
+          //if(new_opacity === 1) {
+          //  window.top_name_animate = false;
+          //}
+        }
       });
     });
   </script>

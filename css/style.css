@@ -12,7 +12,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', Arial, sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -47,6 +47,7 @@ p, blockquote, ul {
   background: #1A5582;
   color: #fff;
   line-height: 1.4;
+  font-weight: 300;
   margin-top: 25px;
   margin-bottom: 13px;
   padding: 2px 0 7px 0;
@@ -60,6 +61,11 @@ p, blockquote, ul {
   background: -ms-linear-gradient(top,  #4d8ec1 0%,#1a5582 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #4d8ec1 0%,#1a5582 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d8ec1', endColorstr='#1a5582',GradientType=0 ); /* IE6-8 */
+}
+@media only screen and (min-width: 768px) {
+  .section-title {
+    font-weight: 100;
+  }
 }
 @media only screen and (min-width: 1030px) {
   .section-title {
@@ -109,6 +115,7 @@ p, blockquote, ul {
   display: block;
   padding: 0 15px;
   opacity: 0.0;
+  font-weight: 100;
 }
 @media only screen and (min-width: 940px) {
   .top-bar .name h1 {
@@ -123,6 +130,7 @@ p, blockquote, ul {
   margin: 0;
   line-height: 0.9;
   letter-spacing: -4px;
+  font-weight: 100;
 }
 .mark {
   font-size: 120px;
