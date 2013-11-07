@@ -90,6 +90,8 @@
       <h1 class="section-title">Who's this guy?</h1>
       <div class="small-12 columns bio">
         <p>A stand-up guy. Fo realz.</p>
+        <p><button class="flickr-btn">Click for cool</button></p>
+        <p class="flickr-target">here</p>
       </div>
     </div>
 
@@ -194,6 +196,18 @@
           //}
         }
       });
+
+      $('.flickr-btn').click(function() {
+        $.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?callback=?',
+          { id: '46457493@N00', format: 'json' }
+        );
+      });
+
+      window.jsonFlickrFeed = function(data) {
+        var $img = $('<img>');
+        $img.appendTo($('.flickr-target'));
+        $img.attr('src', data['items'][0]['media']['m']);
+      }
     });
   </script>
 </body>
